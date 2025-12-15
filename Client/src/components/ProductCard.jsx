@@ -56,24 +56,24 @@ const ProductCard = ({ product }) => {
 
         {/* Price + Cart */}
         <div className="flex items-end justify-between mt-3">
-          <p className="md:text-xl text-base font-medium text-indigo-500">
+          <p className="md:text-xl text-base font-medium text-primary-500">
             {currency}{product.offerPrice}{" "}
             <span className="text-gray-500/60 md:text-sm text-xs line-through">
               {currency}{product.Price}
             </span>
           </p>
 
-          <div className="text-indigo-500">
+          <div className="text-primary-500">
             {quantity === 0 ? (
               <button
-                className="flex items-center justify-center gap-1 bg-indigo-100 border border-indigo-300 md:w-20 w-16 h-[34px] rounded text-indigo-600 font-medium"
+                className="flex items-center justify-center gap-1 bg-primary-100 border border-primary-300 md:w-20 w-16 h-[34px] rounded text-primary-600 font-medium"
                 onClick={() => addToCart(product._id)}
               >
                 <img src={assets.cart} alt="cart" className="w-4 h-4" />
                 Add
               </button>
             ) : (
-              <div className="flex items-center justify-center gap-2 md:w-20 w-16 h-[34px] bg-indigo-500/25 rounded select-none">
+              <div className="flex items-center justify-center gap-2 md:w-20 w-16 h-[34px] bg-primary-500/25 rounded select-none">
                 <button
                   onClick={() =>
                     quantity === 1

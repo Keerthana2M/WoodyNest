@@ -12,13 +12,13 @@ const navbar = () => {
 
     const logout = async ()=>{
         setUser(null);
-        Navigate('/')
+        navigate('/')
     }
   return (
      <nav className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-gray-300 bg-white relative transition-all">
 
            <NavLink to="/" onClick={()=>setOpen(false)}>
-  <img src="/Woody.png" alt="WoodyNest Logo" className="w-40" />
+  <img src={assets.logo} alt="WoodyNest Logo" className="w-40" />
 </NavLink>
 
 

@@ -28,6 +28,9 @@ import d7 from './Dine7.avif';
 import w1 from './wall1.jpg';
 import star from './star.png';
 import star_d from './star_d.png';
+import banner from './B_Banner.png';
+import banner_s from './Banner_sm.png';
+import logo from './Woody.png';
 
 export const assets = {
     user,
@@ -50,7 +53,10 @@ export const assets = {
     leaf,
     coin,
     star,
-    star_d
+    star_d,
+    banner,
+    banner_s,
+    logo
 
 }
 export const Categories = [
@@ -193,7 +199,7 @@ export const features =[
             Categories:"Dine",
             Price:30000,
             offerPrice:25000,
-            image:[d6],
+            image:[d2],
             description:[
                 "Crafted from premium quality wood ",
                 "Elegant design for modern dining spaces",
@@ -205,6 +211,22 @@ export const features =[
         },
          {
             id:"gd48g23h",
+            name:"Table",
+            Categories:"Table",
+            Price:2500,
+            offerPrice:5000,
+            image:[table],
+            description:[
+                "Crafted from premium quality wood ",
+                "Elegant design for modern dining spaces",
+                "Smooth finish for a refined look",
+            ],
+            createdAT:"2025-11 25T07:12:08.017Z",
+            updatedAT:"2025-11 25T07:2:08.143Z",
+            inStock:true,
+        },
+         {
+            id:"gd49g23h",
             name:"Wall Shelf",
             Categories:"Wall Shelf",
             Price:2500,
