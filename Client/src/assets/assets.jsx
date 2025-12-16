@@ -31,6 +31,31 @@ import star_d from './star_d.png';
 import banner from './B_Banner.png';
 import banner_s from './Banner_sm.png';
 import logo from './Woody.png';
+import o1 from './Do1.jpg';
+import o2 from './Do2.webp';
+import o3 from './Do4.jpg';
+import o4 from './Do5.jpg';
+import o5 from './Do6.jpg';
+import b1 from './be1.webp';
+import b2 from './be2.jpg';
+import b3 from './be3.webp';
+import b4 from './be4.webp';
+import b5 from './be5.jpg';
+import t1 from './ta1.jpg';
+import t2 from './ta2.webp';
+import t3 from './ta3.jpg';
+import t4 from './ta4.webp';
+import t5 from './ta5.jpg';
+import s1 from './sw1.webp';
+import s2 from './sw2.webp';
+import s3 from './sw3.jpg';
+import s4 from './sw4.webp';
+import v1 from './va1.jpg';
+import v2 from './v2.jpg';
+import v3 from './va3.jpg';
+import d11 from './D11.jpg';
+import d12 from './D12.jpg';
+import d13 from './D13.jpg';
 
 export const assets = {
     user,
@@ -56,7 +81,28 @@ export const assets = {
     star_d,
     banner,
     banner_s,
-    logo
+    logo,
+    o1,
+    o2,
+    o3,
+    o4,
+    o5,b1,
+    b2,
+    b3,
+    b4,
+    b5,
+    t1,
+    t2,
+    t3,
+    t4,
+    t5,
+    s1,
+    s2,
+    s3,
+    s4,
+    v1,
+    v2,
+    v3
 
 }
 export const Categories = [
@@ -74,7 +120,7 @@ export const Categories = [
     },
      {
         text:"Table",
-        path:"Table",
+        path:"table",
         image:table,
         bgColor:"#FFF7C2",
     },
@@ -91,14 +137,14 @@ export const Categories = [
         bgColor:"#F4F1FF",
     },
       {
-        text:"Wall Shelf",
-        path:"Wall",
+        text:"Wall",
+        path:"wall",
         image:wall,
         bgColor:"#EEF5FF",
     },
       {
-        text:"Vasus",
-        path:"vasus",
+        text:"Vase",
+        path:"vase",
         image:vasus,
         bgColor:"#EEF7F2",
     }
@@ -160,87 +206,411 @@ export const features =[
         description:"Loved by 10,000+ happy customers",
     },
     ];
-    export const dummyproducts = [
-        {
-            id:"gd46g23h",
-            name:"Dining Table 4 seater ",
-            Categories:"Dine",
-            Price:20000,
-            offerPrice:15000,
-            image:[d1,d3,d4],
-            description:[
-                "Crafted from premium quality wood ",
-                "Elegant design for modern dining spaces",
-                "Smooth finish for a refined look",
-            ],
-            createdAT:"2025-12 25T07:12:08.018Z",
-            updatedAT:"2025-12 25T07:2:08.103Z",
-            inStock:true,
-        },
-           {
-            id:"gd46g23h",
-            name:"Dining Table -6 seater",
-            Categories:"Dine",
-            Price:30000,
-            offerPrice:25000,
-            image:[d6],
-            description:[
-                "Crafted from premium quality wood ",
-                "Elegant design for modern dining spaces",
-                "Smooth finish for a refined look",
-            ],
-            createdAT:"2025-12 25T07:12:08.018Z",
-            updatedAT:"2025-12 25T07:2:08.103Z",
-            inStock:true,
-        },
-        {
-            id:"gd47g23h",
-            name:"Dining Table -6 seater",
-            Categories:"Dine",
-            Price:30000,
-            offerPrice:25000,
-            image:[d2],
-            description:[
-                "Crafted from premium quality wood ",
-                "Elegant design for modern dining spaces",
-                "Smooth finish for a refined look",
-            ],
-            createdAT:"2025-12 25T07:12:08.018Z",
-            updatedAT:"2025-12 25T07:2:08.103Z",
-            inStock:true,
-        },
-         {
-            id:"gd48g23h",
-            name:"Table",
-            Categories:"Table",
-            Price:2500,
-            offerPrice:5000,
-            image:[table],
-            description:[
-                "Crafted from premium quality wood ",
-                "Elegant design for modern dining spaces",
-                "Smooth finish for a refined look",
-            ],
-            createdAT:"2025-11 25T07:12:08.017Z",
-            updatedAT:"2025-11 25T07:2:08.143Z",
-            inStock:true,
-        },
-         {
-            id:"gd49g23h",
-            name:"Wall Shelf",
-            Categories:"Wall Shelf",
-            Price:2500,
-            offerPrice:5000,
-            image:[w1],
-            description:[
-                "Crafted from premium quality wood ",
-                "Elegant design for modern dining spaces",
-                "Smooth finish for a refined look",
-            ],
-            createdAT:"2025-12 25T07:12:08.017Z",
-            updatedAT:"2025-12 25T07:2:08.143Z",
-            inStock:true,
-        },
-    ]
+   export const dummyproducts = [
+  {
+    _id: "gd46g23h-1",
+    name: "Dining Table 4 Seater",
+    category: "Dine",
+    price: 20000,
+    offerPrice: 15000,
+    image: [d1,d11,d12,d13],
+    description: [
+      "Crafted from premium quality wood",
+      "Elegant design for modern dining spaces",
+      "Smooth finish for a refined look",
+    ],
+    inStock: true,
+  },
+  {
+    _id: "gd48g23h-1",
+    name: "Wooden Table",
+    category: "table",
+    price: 2500,
+    offerPrice: 2000,
+    image: [table],
+    inStock: true,
+  },
+   {
+    _id: "gd60g23h-2",
+    name: "Bed",
+    category: "Bed",
+    price: 10000,
+    offerPrice: 5000,
+    image: [b3],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+
+    {
+    _id: "gd56g23h-2",
+    name: "Door",
+    category: "Door",
+    price: 10000,
+    offerPrice: 5000,
+    image: [o1],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+   {
+    _id: "gd70g23h-2",
+    name: "Swing",
+    category: "swing",
+    price: 10000,
+    offerPrice: 5000,
+    image: [s1],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+  {
+    _id: "gd47g23h-2",
+    name: "Dining Table 6 Seater",
+    category: "Dine",
+    price: 30000,
+    offerPrice: 25000,
+    image: [d2],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+    {
+    _id: "gd45g23h-2",
+    name: "Dining Table 4 Seater",
+    category: "Dine",
+    price: 30000,
+    offerPrice: 25000,
+    image: [d5],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+  
+    {
+   _id: "gd44g23h-2",
+    name: "Dining Table 4 Seater",
+    category: "Dine",
+    price: 30000,
+    offerPrice: 25000,
+    image: [d3],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+  
+    {
+    _id: "gd43g23h-2",
+    name: "Dining Table 4 Seater",
+    category: "Dine",
+    price: 30000,
+    offerPrice: 25000,
+    image: [d4],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+   {
+    _id: "gd42g23h-2",
+    name: "Dining Table 4 Seater",
+    category: "Dine",
+    price: 30000,
+    offerPrice: 25000,
+    image: [d6],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+  
+   {
+    _id: "gd41g23h-2",
+    name: "Dining Table 4 Seater",
+    category: "Dine",
+    price: 30000,
+    offerPrice: 25000,
+    image: [d7],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+ 
+   {
+    _id: "gd54g23h-2",
+    name: "Door",
+    category: "Door",
+    price: 10000,
+    offerPrice: 5000,
+    image: [o2],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+  {
+    _id: "gd55g23h-2",
+    name: "Door",
+    category: "Door",
+    price: 10000,
+    offerPrice: 5000,
+    image: [o3],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+  {
+  _id: "gd57g23h-2",
+    name: "Door",
+    category: "Door",
+    price: 10000,
+    offerPrice: 5000,
+    image: [o4],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+  {
+    _id: "gd58g23h-2",
+    name: "Door",
+    category: "Door",
+    price: 10000,
+    offerPrice: 5000,
+    image: [o5],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+   {
+    _id: "gd52g23h-2",
+    name: "Bed",
+    category: "Bed",
+    price: 10000,
+    offerPrice: 5000,
+    image: [b1],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+   {
+    _id: "gd51g23h-2",
+    name: "Bed",
+    category: "Bed",
+    price: 10000,
+    offerPrice: 5000,
+    image: [b2],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+  
+    {
+    _id: "gd49g23h-1",
+    name: "Wall",
+    category: "wall",
+    price: 2500,
+    offerPrice: 2000,
+    image: [w1],
+    inStock: true,
+  },
+   {
+    _id: "gd61g23h-2",
+    name: "Bed",
+    category: "Bed",
+    price: 10000,
+    offerPrice: 5000,
+    image: [b4],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+   {
+    _id: "gd62g23h-2",
+    name: "Bed",
+    category: "Bed",
+    price: 10000,
+    offerPrice: 5000,
+    image: [b5],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+    {
+    _id: "gd63g23h-2",
+    name: "Table",
+    category: "table",
+    price: 10000,
+    offerPrice: 5000,
+    image: [t1],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+   {
+   _id: "gd64g23h-2",
+    name: "Table",
+    category: "table",
+    price: 10000,
+    offerPrice: 5000,
+    image: [t2],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+   {
+    _id: "gd65g23h-2",
+    name: "Table",
+    category: "table",
+    price: 10000,
+    offerPrice: 5000,
+    image: [t3],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+   {
+    _id: "gd66g23h-2",
+    name: "Table",
+    category: "table",
+    price: 10000,
+    offerPrice: 5000,
+    image: [t4],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+   {
+    _id: "gd69g23h-2",
+    name: "Table",
+    category: "table",
+    price: 10000,
+    offerPrice: 5000,
+    image: [t5],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+ 
+    {
+    _id: "gd71g23h-2",
+    name: "Swing",
+    category: "swing",
+    price: 10000,
+    offerPrice: 5000,
+    image: [s2],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+    {
+    _id: "gd72g23h-2",
+    name: "Swing",
+    category: "swing",
+    price: 10000,
+    offerPrice: 5000,
+    image: [s3],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+    {
+    _id: "gd73g23h-2",
+    name: "Swing",
+    category: "swing",
+    price: 10000,
+    offerPrice: 5000,
+    image: [s4],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+    {
+    _id: "gd74g23h-2",
+    name: "Vase",
+    category: "vase",
+    price: 10000,
+    offerPrice: 5000,
+    image: [v1],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+    {
+    _id: "gd75g23h-2",
+    name: "Vase",
+    category: "vase",
+    price: 10000,
+    offerPrice: 5000,
+    image: [v2],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+    {
+    _id: "gd76g23h-2",
+    name: "Vase",
+    category: "vase",
+    price: 10000,
+    offerPrice: 5000,
+    image: [v3],
+    description: [
+      "Premium solid wood construction",
+      "Perfect for large families",
+    ],
+    inStock: true,
+  },
+];
+
 
 

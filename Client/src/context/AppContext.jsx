@@ -13,7 +13,7 @@ export const AppContextProvider = ({children}) =>{
   const [showUserLogin, setShowUserLogin] = useState(true);
   const [products,setProducts]=useState([])
   const [cartItems,setCartItems] = useState({})
-  const [searchQuery,setSearchQuery] = useState({})
+  const [searchQuery,setSearchQuery] = useState("")
 
   const fetchProducts = async () =>{
     setProducts(dummyproducts);
@@ -49,6 +49,15 @@ export const AppContextProvider = ({children}) =>{
     toast.success("Removed From Cart")
     setCartItems(cartData);
   }
+
+  const getCartCount = () =>{
+    let totalCount = 0;
+    for(const item in cartItems){
+      totalCount +=cartItems[item];
+    }
+    return totalCount;
+  }
+  
   useEffect(() =>{
     fetchProducts();
     

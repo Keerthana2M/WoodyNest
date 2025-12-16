@@ -1,5 +1,5 @@
 import React from "react";
-import { assets } from "../assets/assets";
+import { assets,Categories} from "../assets/assets";
 import { useAppContext } from "../context/AppContext";
 
 const ProductCard = ({ product }) => {
@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
   const quantity = cartItems[product._id] || 0;
 
   return (
-    <div className="border border-gray-500/20 rounded-md md:px-4 px-3 py-2 bg-white min-w-56 max-w-56 w-full">
+    <div onClick={()=>{navigate(`/products/${product.category}/${product._id}`); scrollTo(0,0)}}className="border border-gray-500/20 rounded-md md:px-4 px-3 py-2 bg-white min-w-56 max-w-56 w-full">
 
       {/* Product Image */}
       <div
@@ -59,7 +59,7 @@ const ProductCard = ({ product }) => {
           <p className="md:text-xl text-base font-medium text-primary-500">
             {currency}{product.offerPrice}{" "}
             <span className="text-gray-500/60 md:text-sm text-xs line-through">
-              {currency}{product.Price}
+              {currency}{product.price}
             </span>
           </p>
 
