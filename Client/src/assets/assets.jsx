@@ -612,7 +612,7 @@ export const features =[
     inStock: true,
   },
 ];
-const addresses =[
+ export const addresses =[
   {
     street: "123 Main street",
     city:"Bangalore",
