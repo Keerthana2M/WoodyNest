@@ -56,6 +56,7 @@ import v3 from './va3.jpg';
 import d11 from './D11.jpg';
 import d12 from './D12.jpg';
 import d13 from './D13.jpg';
+import r from './refresh.png';
 
 export const assets = {
     user,
@@ -102,7 +103,7 @@ export const assets = {
     s4,
     v1,
     v2,
-    v3
+    v3,r
 
 }
 export const Categories = [
@@ -611,6 +612,57 @@ export const features =[
     inStock: true,
   },
 ];
+const addresses =[
+  {
+    street: "123 Main street",
+    city:"Bangalore",
+    state:"Karnataka",
+    Country :"India",
+    },
+     {
+    street: "143 Main street",
+    city:"Hassan",
+    state:"Karnataka",
+    Country :"India",
+    },
+     {
+    street: "13 Main street",
+    city:"Bangalore",
+    state:"Karnataka",
+    Country :"India",
+    },
+     {
+    street: "12 Main street",
+    city:"Bangalore-rural",
+    state:"Karnataka",
+    Country :"India",
+    },
+     {
+    street: "1 Main street",
+    city:"Bangalore",
+    state:"Karnataka",
+    Country :"India",
+    },
+     {
+    street: "143 Main street",
+    city:"Vijaypura",
+    state:"Karnataka",
+    Country :"India",
+    },
+     {
+    street: "121 Main street",
+    city:"Shivamogga",
+    state:"Karnataka",
+    Country :"India",
+    },
+     {
+    street: "1 Main street",
+    city:"Davangere",
+    state:"Karnataka",
+    Country :"India",
+    },
+
+]
 
 
 
