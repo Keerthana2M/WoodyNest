@@ -30,7 +30,7 @@ import star from './star.png';
 import star_d from './star_d.png';
 import banner from './B_Banner.png';
 import banner_s from './Banner_sm.png';
-import logo from './Woody.png';
+
 import o1 from './Do1.jpg';
 import o2 from './Do2.webp';
 import o3 from './Do4.jpg';
@@ -82,7 +82,7 @@ export const assets = {
     star_d,
     banner,
     banner_s,
-    logo,
+  
     o1,
     o2,
     o3,
