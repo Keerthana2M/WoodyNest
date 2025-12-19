@@ -59,6 +59,11 @@ import d13 from './D13.jpg';
 import r from './refresh.png';
 import cancel from './cancel.png';
 import add from './address.png';
+import u from './upload.png';
+
+import c1 from './more.png';
+import c2 from './checkbox.png';
+import c3 from './checklist.png';
 
 export const assets = {
     user,
@@ -84,7 +89,10 @@ export const assets = {
     star_d,
     banner,
     banner_s,
-  
+    u,
+    c1,
+    c2,
+    c3,
     o1,
     o2,
     o3,
@@ -667,6 +675,83 @@ export const features =[
     },
 
 ]
+
+
+export const dummyOrders = [
+  {
+    _id: "672589a8f87e63366786400",
+    userId: "67b5880e4d09769c5ca61644",
+    items: [
+      {
+        product: dummyproducts[3],
+        quantity: 2,
+        _id: "672589a8f87e63366786401",
+      },
+    ],
+    amount: dummyproducts[3].offerPrice * 2,
+    address: addresses[0],
+    status: "Order Placed",
+    paymentType: "Online",
+    isPaid: true,
+    createdAt: "2025-03-25T07:17:46.018Z",
+    updatedAt: "2025-03-25T07:18:13.103Z",
+  },
+
+  {
+    _id: "672589a8f87e63366786410",
+    userId: "67b5880e4d09769c5ca61644",
+    items: [
+      {
+        product: dummyproducts[1],
+        quantity: 1,
+        _id: "672589a8f87e63366786411",
+      },
+      {
+        product: dummyproducts[4],
+        quantity: 3,
+        _id: "672589a8f87e63366786412",
+      },
+    ],
+    amount:
+      dummyproducts[1].offerPrice +
+      dummyproducts[4].offerPrice * 3,
+    address: addresses[1],
+    status: "Shipped",
+    paymentType: "Cash on Delivery",
+    isPaid: false,
+    createdAt: "2025-03-24T10:12:30.018Z",
+    updatedAt: "2025-03-24T12:45:50.103Z",
+  },
+   {
+    _id: "672589a8f87e63856786410",
+    userId: "67b5880e4d09769c5ca61644",
+    items: [
+      {
+        product: dummyproducts[1],
+        quantity: 1,
+        _id: "672589a8f87e63366786411",
+      },
+      {
+        product: dummyproducts[4],
+        quantity: 3,
+        _id: "672589a8f87e63366786412",
+      },
+    ],
+    amount:
+      dummyproducts[1].offerPrice +
+      dummyproducts[4].offerPrice * 3,
+    address: addresses[1],
+    status: "Shipped",
+    paymentType: "Cash on Delivery",
+    isPaid: false,
+    createdAt: "2025-03-24T10:12:30.018Z",
+    updatedAt: "2025-03-24T12:45:50.103Z",
+  },
+
+];
+
+
+
 
 
 
