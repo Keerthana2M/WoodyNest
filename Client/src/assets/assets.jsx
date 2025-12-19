@@ -57,6 +57,8 @@ import d11 from './D11.jpg';
 import d12 from './D12.jpg';
 import d13 from './D13.jpg';
 import r from './refresh.png';
+import cancel from './cancel.png';
+import add from './address.png';
 
 export const assets = {
     user,
@@ -103,7 +105,9 @@ export const assets = {
     s4,
     v1,
     v2,
-    v3,r
+    v3,r,
+    cancel,
+    add
 
 }
 export const Categories = [
