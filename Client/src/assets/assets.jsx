@@ -60,6 +60,7 @@ import r from './refresh.png';
 import cancel from './cancel.png';
 import add from './address.png';
 import u from './upload.png';
+import box from'./box.png';
 
 import c1 from './more.png';
 import c2 from './checkbox.png';
@@ -70,6 +71,7 @@ export const assets = {
     door,
     Main,
     mobile,
+    box,
     arrow,
     warrow,
     searchImg,
